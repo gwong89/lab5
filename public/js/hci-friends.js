@@ -12,6 +12,14 @@ function initializePage() {
 	console.log("Javascript connected!");
 }
 
+
+
+$("h3").click(function(event){
+    event.preventDefault();
+	$(this).text(anagrammedName($(this).text()));
+	
+});
+
 function anagrammedName(name) {
 	// Thanks, Internet Anagram Server!
 	
